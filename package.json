@@ -8,17 +8,15 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.0",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "prettier": "^3.2.5",
-    "turbo": "latest"
+    "turbo": "^2",
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.1.12",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"]
 }
