@@ -2,10 +2,23 @@
   "name": "@repo/database",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "dev": "echo 'Add dev script here'",
     "build": "echo 'Add build script here'",
     "test": "echo 'Add test script here'",
-    "lint": "echo 'Add lint script here'"
-  }
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.2",
+    "drizzle-orm": "^0.31.2"
+  },
+  "devDependencies": { "drizzle-kit": "^0.22.7" }
 }

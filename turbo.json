@@ -5,6 +5,10 @@
     "//#check": {},
     "//#format": {},
 
+    "db:push": {},
+    "db:generate": {},
+    "db:migrate": {},
+
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
@@ -12,6 +16,10 @@
 
     "lint": {
       "dependsOn": ["//#check", "^lint"]
+    },
+
+    "typecheck": {
+      "dependsOn": ["//#check", "^typecheck"]
     },
 
     "dev": {
