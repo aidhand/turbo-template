@@ -1,7 +1,8 @@
 // @ts-check
 
-import { qwik } from "@repo/eslint-config";
 import tseslint from "typescript-eslint";
+
+import { qwik } from "@repo/eslint-config";
 
 export default tseslint.config({
   extends: [...qwik],
