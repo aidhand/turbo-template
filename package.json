@@ -5,18 +5,20 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "check": "biome check --write",
+    "format": "biome format --write"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.0",
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "turbo": "^2",
-    "typescript": "^5"
+    "@repo/eslint-config": "0.0.0",
+    "@repo/typescript-config": "0.0.0",
+    "syncpack": "^12.3.2",
+    "turbo": "^2.0.3",
+    "typescript": "^5.4.5"
   },
+  "workspaces": ["apps/*", "packages/*"],
+  "packageManager": "bun@1.1.12",
   "engines": {
     "node": ">=18"
-  },
-  "packageManager": "bun@1.1.12",
-  "workspaces": ["apps/*", "packages/*"]
+  }
 }

@@ -41,6 +41,6 @@
       "**/*.mdx"
     ],
 
-    "ignore": ["bun.lockb", "**/*.hbs"]
+    "ignore": ["bun.lockb", "vite.config.*", "**/*.hbs"]
   }
 }
