@@ -12,6 +12,8 @@
     "@biomejs/biome": "1.8.0",
     "@repo/eslint-config": "0.0.0",
     "@repo/typescript-config": "0.0.0",
+    "nypm": "^0.3.8",
+    "prettier": "^3.3.2",
     "syncpack": "^12.3.2",
     "turbo": "^2.0.3",
     "typescript": "^5.4.5"
